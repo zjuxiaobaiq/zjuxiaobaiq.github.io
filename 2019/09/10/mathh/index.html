@@ -81,16 +81,19 @@
 
 
 
-<meta name="description" content="有所悟，有所思">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Scorpio&#39;s Notes">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="[TOC] 第一章 数学基础深度学习通常又需要哪些数学基础？深度学习里的数学到底难在哪里？通常初学者都会有这些问题，在网络推荐及书本推荐里，经常看到会列出一系列数学科目，比如微积分、线性代数、概率论、复变函数、数值计算、优化理论、信息论等等。这些数学知识有相关性，但实际上按照这样的知识范围来学习，学习成本会很久，而且会很枯燥，本章我们通过选举一些数学基础里容易混淆的一些概念做以介绍，帮助大家更好的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mathh">
+<meta property="og:url" content="http://yoursite.com/2019/09/10/mathh/index.html">
 <meta property="og:site_name" content="Scorpio&#39;s Notes">
-<meta property="og:description" content="有所悟，有所思">
+<meta property="og:description" content="[TOC] 第一章 数学基础深度学习通常又需要哪些数学基础？深度学习里的数学到底难在哪里？通常初学者都会有这些问题，在网络推荐及书本推荐里，经常看到会列出一系列数学科目，比如微积分、线性代数、概率论、复变函数、数值计算、优化理论、信息论等等。这些数学知识有相关性，但实际上按照这样的知识范围来学习，学习成本会很久，而且会很枯燥，本章我们通过选举一些数学基础里容易混淆的一些概念做以介绍，帮助大家更好的">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2019/09/10/mathh/img/ch1/conditional_probability.jpg">
+<meta property="og:updated_time" content="2019-09-10T13:11:20.912Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Scorpio&#39;s Notes">
-<meta name="twitter:description" content="有所悟，有所思">
+<meta name="twitter:title" content="mathh">
+<meta name="twitter:description" content="[TOC] 第一章 数学基础深度学习通常又需要哪些数学基础？深度学习里的数学到底难在哪里？通常初学者都会有这些问题，在网络推荐及书本推荐里，经常看到会列出一系列数学科目，比如微积分、线性代数、概率论、复变函数、数值计算、优化理论、信息论等等。这些数学知识有相关性，但实际上按照这样的知识范围来学习，学习成本会很久，而且会很枯燥，本章我们通过选举一些数学基础里容易混淆的一些概念做以介绍，帮助大家更好的">
+<meta name="twitter:image" content="http://yoursite.com/2019/09/10/mathh/img/ch1/conditional_probability.jpg">
 
 
 
@@ -120,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/09/10/mathh/">
 
 
 
 
 
-  <title>Scorpio's Notes</title>
+  <title>mathh | Scorpio's Notes</title>
   
 
 
@@ -145,8 +148,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -249,9 +251,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -281,9 +283,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/10/mathh/" itemprop="url">mathh</a></h1>
+          <h1 class="post-title" itemprop="name headline">mathh</h1>
         
 
         <div class="post-meta">
@@ -315,6 +315,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
 
           
 
@@ -333,9 +338,7 @@
       
 
       
-        
-          
-            <p>[TOC]</p>
+        <p>[TOC]</p>
 <h1 id="第一章-数学基础"><a href="#第一章-数学基础" class="headerlink" title="第一章 数学基础"></a>第一章 数学基础</h1><p>深度学习通常又需要哪些数学基础？深度学习里的数学到底难在哪里？通常初学者都会有这些问题，在网络推荐及书本推荐里，经常看到会列出一系列数学科目，比如微积分、线性代数、概率论、复变函数、数值计算、优化理论、信息论等等。这些数学知识有相关性，但实际上按照这样的知识范围来学习，学习成本会很久，而且会很枯燥，本章我们通过选举一些数学基础里容易混淆的一些概念做以介绍，帮助大家更好的理清这些易混淆概念之间的关系。</p>
 <h2 id="1-1-向量和矩阵"><a href="#1-1-向量和矩阵" class="headerlink" title="1.1 向量和矩阵"></a>1.1 向量和矩阵</h2><h3 id="1-1-1-标量、向量、矩阵、张量之间的联系"><a href="#1-1-1-标量、向量、矩阵、张量之间的联系" class="headerlink" title="1.1.1 标量、向量、矩阵、张量之间的联系"></a>1.1.1 标量、向量、矩阵、张量之间的联系</h3><p><strong>标量（scalar）</strong><br>一个标量表示一个单独的数，它不同于线性代数中研究的其他大部分对象（通常是多个数的数组）。我们用斜体表示标量。标量通常被赋予小写的变量名称。 </p>
 <p><strong>向量（vector）</strong><br>​一个向量表示一组有序排列的数。通过次序中的索引，我们可以确定每个单独的数。通常我们赋予向量粗体的小写变量名称，比如xx。向量中的元素可以通过带脚标的斜体表示。向量$X$的第一个元素是$X_1$，第二个元素是$X_2$，以此类推。我们也会注明存储在向量中的元素的类型（实数、虚数等）。</p>
@@ -571,8 +574,6 @@
 <p>[3]同济大学数学系.高等数学（第七版）[M]，高等教育出版社，2014.</p>
 <p>[4]盛骤，试式千，潘承毅等编. 概率论与数理统计（第4版）[M]，高等教育出版社，2008</p>
 
-          
-        
       
     </div>
     
@@ -584,137 +585,51 @@
     
 
     
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Scorpio
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2019/09/10/mathh/" title="mathh">http://yoursite.com/2019/09/10/mathh/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
 
     <footer class="post-footer">
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/08/1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Scorpio">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/1.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Scorpio's Notes">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/08/1/" itemprop="url">leetcode1</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-08T21:05:34+08:00">
-                2019-09-08
-              </time>
+              <a href="/2019/09/08/1/" rel="next" title="leetcode1">
+                <i class="fa fa-chevron-left"></i> leetcode1
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>第一天，搞了一下博客</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -724,142 +639,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/08/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Scorpio">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/1.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Scorpio's Notes">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/08/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-08T20:53:31+08:00">
-                2019-09-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -867,6 +651,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -887,8 +675,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -963,6 +760,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第一章-数学基础"><span class="nav-number">1.</span> <span class="nav-text">第一章 数学基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-向量和矩阵"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 向量和矩阵</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-1-标量、向量、矩阵、张量之间的联系"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1.1 标量、向量、矩阵、张量之间的联系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-2-张量与矩阵的区别"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.1.2 张量与矩阵的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-3-矩阵和向量相乘结果"><span class="nav-number">1.1.3.</span> <span class="nav-text">1.1.3 矩阵和向量相乘结果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-4-向量和矩阵的范数归纳"><span class="nav-number">1.1.4.</span> <span class="nav-text">1.1.4 向量和矩阵的范数归纳</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-5-如何判断一个矩阵为正定"><span class="nav-number">1.1.5.</span> <span class="nav-text">1.1.5 如何判断一个矩阵为正定</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-导数和偏导数"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 导数和偏导数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-1-导数偏导计算"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.2.1 导数偏导计算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-2-导数和偏导数有什么区别？"><span class="nav-number">1.2.2.</span> <span class="nav-text">1.2.2 导数和偏导数有什么区别？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-特征值和特征向量"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 特征值和特征向量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-1-特征值分解与特征向量"><span class="nav-number">1.3.1.</span> <span class="nav-text">1.3.1 特征值分解与特征向量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-2-奇异值与特征值有什么关系"><span class="nav-number">1.3.2.</span> <span class="nav-text">1.3.2 奇异值与特征值有什么关系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-概率分布与随机变量"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 概率分布与随机变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-1-机器学习为什么要使用概率"><span class="nav-number">1.4.1.</span> <span class="nav-text">1.4.1 机器学习为什么要使用概率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-2-变量与随机变量有什么区别"><span class="nav-number">1.4.2.</span> <span class="nav-text">1.4.2 变量与随机变量有什么区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-3-随机变量与概率分布的联系"><span class="nav-number">1.4.3.</span> <span class="nav-text">1.4.3 随机变量与概率分布的联系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-4-离散型随机变量和概率质量函数"><span class="nav-number">1.4.4.</span> <span class="nav-text">1.4.4 离散型随机变量和概率质量函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-5-连续型随机变量和概率密度函数"><span class="nav-number">1.4.5.</span> <span class="nav-text">1.4.5 连续型随机变量和概率密度函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-6-举例理解条件概率"><span class="nav-number">1.4.6.</span> <span class="nav-text">1.4.6 举例理解条件概率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-7-联合概率与边缘概率联系区别"><span class="nav-number">1.4.7.</span> <span class="nav-text">1.4.7 联合概率与边缘概率联系区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-8-条件概率的链式法则"><span class="nav-number">1.4.8.</span> <span class="nav-text">1.4.8 条件概率的链式法则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-9-独立性和条件独立性"><span class="nav-number">1.4.9.</span> <span class="nav-text">1.4.9 独立性和条件独立性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-5-常见概率分布"><span class="nav-number">1.5.</span> <span class="nav-text">1.5 常见概率分布</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-1-Bernoulli分布"><span class="nav-number">1.5.1.</span> <span class="nav-text">1.5.1 Bernoulli分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-2-高斯分布"><span class="nav-number">1.5.2.</span> <span class="nav-text">1.5.2 高斯分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-3-何时采用正态分布"><span class="nav-number">1.5.3.</span> <span class="nav-text">1.5.3 何时采用正态分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-4-指数分布"><span class="nav-number">1.5.4.</span> <span class="nav-text">1.5.4 指数分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-5-Laplace-分布"><span class="nav-number">1.5.5.</span> <span class="nav-text">1.5.5 Laplace 分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-6-Dirac分布和经验分布"><span class="nav-number">1.5.6.</span> <span class="nav-text">1.5.6 Dirac分布和经验分布</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-6-期望、方差、协方差、相关系数"><span class="nav-number">1.6.</span> <span class="nav-text">1.6 期望、方差、协方差、相关系数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-6-1-期望"><span class="nav-number">1.6.1.</span> <span class="nav-text">1.6.1 期望</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-6-2-方差"><span class="nav-number">1.6.2.</span> <span class="nav-text">1.6.2 方差</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-6-3-协方差"><span class="nav-number">1.6.3.</span> <span class="nav-text">1.6.3 协方差</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-6-4-相关系数"><span class="nav-number">1.6.4.</span> <span class="nav-text">1.6.4 相关系数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">1.7.</span> <span class="nav-text">参考文献</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1123,6 +936,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
